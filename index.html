@@ -28,7 +28,7 @@ body {
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
 
 header {
-  padding: 100px 0 70px;
+  padding: 100px 0 35px;
   border-bottom: 1px solid rgba(27,42,61,0.12);
 }
 
@@ -52,11 +52,11 @@ header {
 h1 {
   font-family: 'Fraunces', serif;
   font-weight: 600;
-  font-size: clamp(38px, 6vw, 56px);
-  line-height: 1.05;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.1;
   color: var(--ink);
   letter-spacing: -0.01em;
-  margin: 10px 0 20px;
+  margin: 10px 0 0px;
 }
 
 .tagline {
@@ -65,7 +65,7 @@ h1 {
   max-width: 46ch;
 }
 
-section { padding: 56px 0; border-bottom: 1px solid rgba(27,42,61,0.12); }
+section { padding: 28px 0; border-bottom: 1px solid rgba(27,42,61,0.12); }
 section:last-of-type { border-bottom: none; }
 
 h2 {
@@ -78,6 +78,17 @@ h2 {
 
 p { max-width: 62ch; }
 p + p { margin-top: 14px; }
+
+.portrait {
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid rgba(27,42,61,0.12);
+  margin: 4px 24px 12px 0;
+  filter: grayscale(12%);
+}
 
 .venture {
   margin-top: 28px;
@@ -124,6 +135,16 @@ footer a { color: var(--slate); }
   font-size: 15px;
   color: var(--ink);
 }
+
+@media (max-width: 500px) {
+  .portrait {
+    float: none;
+    display: block;
+    width: 108px;
+    height: 108px;
+    margin: 0 0 20px;
+  }
+}
 </style>
 </head>
 <body>
@@ -149,8 +170,9 @@ footer a { color: var(--slate); }
 
     <section>
       <h2>Hi</h2>
+      <img class="portrait" src="images/aaron.jpg" alt="Aaron Snow" />
       <p>I’m Aaron Snow. I built and led digital service teams for two governments. In 2014 I co-founded and then led <a href="/Users/aaron/code/aaronsnow.github.io/hi.md">18F</a>, the US government’s in-house technology and design consultancy, and helped create and was the first Deputy Commissioner of the <a href="file:///Users/aaron/Library/Containers/org.desairem.uFocus/Data/https:/tts.gsa.gov">Technology Transformation Service</a>. From 2018-2021 I was the first CEO of the Government of Canada’s <a href="https://aaronsnow.net/2021/10/13/the-canadian-digital-service-chapter-1.html">Canadian Digital Service</a>.</p>
-      <p>I spent last year as a Principal Advisor for <a href="https://aws.amazon.com/">AWS</a>, helping senior executives in governments around the world, including South Africa, Japan, and Canada, on their digital service journeys. Before that, I spent three years as a <a href="https://beeckcenter.georgetown.edu/person/aaron-snow/">Faculty Fellow</a> at the <a href="https://beeckcenter.georgetown.edu/">Georgetown University Beeck Center for Social Impact and Innovation</a> (and six months as its interim Executive Director). I’m currently on the <a href="https://egov.org.in/digit/">eGov DIGIT</a> Governance Council, the <a href="https://fwd50.com">FWD50 </a>Advisory Board, and the Board of Directors of the <a href="https://publiccode.net/">Foundation for Public Code North America</a>.</p>
+      <p>I spent last year as a Principal Advisor for <a href="https://aws.amazon.com/">AWS</a>, helping senior executives in governments around the world, including South Africa, Japan, and Canada, on their digital service journeys. Before that, I spent three years as a <a href="https://beeckcenter.georgetown.edu/person/aaron-snow/">Faculty Fellow</a> at the <a href="https://beeckcenter.georgetown.edu/">Georgetown University Beeck Center for Social Impact and Innovation</a>, and six months as its interim Executive Director. I’m currently on the <a href="https://egov.org.in/digit/">eGov DIGIT</a> Governance Council, the <a href="https://fwd50.com">FWD50 </a>Advisory Board, and the Board of Directors of the <a href="https://publiccode.net/">Foundation for Public Code North America</a>.</p>
       <p>I got my start working on government technology in 2013 as a <a href="https://pif.gov/">Presidential Innovation Fellow</a>. Before entering government service, I developed software and managed product development for small and large enterprises, including Microsoft, and co-founded Daring Software, building the back-end for its flagship <a href="https://web.archive.org/web/20151031205146/http://www.arroapp.com/">Arro</a> shopping app.</p>
       <p>I've posted a few articles on <a href="https://aaronsnow.net">my personal website</a>.</p>
       <p>Current projects include helping a national government's digital agency through the World Bank, and advising a U.S. grantmaking NGO.</p>
